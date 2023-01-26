@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- declaration de type -->
+<html lang="fr">
+<!-- langue francaise -->
+<head>
+	<meta charset="utf-8">
+	<!-- encodage de caractères utf-8 -->
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>SFCV : Spécialiste Francais n°1 des Caves à Vin</title>
+	<!-- Titre de la page dans l'onglet -->
+</head>
+<body>
+	<div id="entete"><!-- TODO1 -->
+	<img class="imgflotte" src="images/logo.png" alt="logo">
+	<!-- img balise pour incorporer une image, src, pour la source de l'image depuis un dossier local, et alt pour un descriptif OBLIGATOIRE -->
+	<h1 class="flotte">SFCV</h1>
+	<h3 class="flotte">N°1 des Caves à Vin</h3>
+	</div>
+	<!-- balise div créer quatre parties différentes dans la page-->
+	<hr>
+
+	<div id="menu"><!-- TODO2 -->
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="produits.html">Produits</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="bloc"><!-- TODO3 -->
+	<h2>Nos Tarifs</h2>
+	<object data="tarifs.html" type="text/html" width="250" height="210"> alt : <a href="tarifs.html">test.html</a>
+	<!-- Incorpore éléments exterieur de type html à la page-->
+</object>
+
+	<h2>Notre catalogue</h2>
+	<object data="catalogue.pdf" type="application/pdf" width="1000" height="500">
+	alt : <a href="catalogue.pdf">catalogue.pdf</a></object>
+		<!-- Incorpore éléments exterieur de type pdf à la page-->
+	<h2>Visite d'une cave</h2>
+	<p>La cave à vin du restaurant de Michel Rostang à Paris est une des caves maison depuis 20 ans, nous ammène à sa découverte.</p>
+	<video width="320" height="240" controls>
+	<source src="visite.mp4" type=video/mp4>
+    </video>
+	<!-- Incorpore éléments exterieur de type mp4 à la page-->
+	</div>
+
+	<div id="pied"><!-- TODO4 -->
+	<p>
+		© SFCV - <a href="Mentions.html">Mentions légales</a><br>
+		L'abus d'alcool est dangereux pour la santé, à consommer avec modération
+	</p>
+	</div>
+</body>
+</html>

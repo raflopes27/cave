@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<style>
+		body
+		{
+			background-image: url(images/fond.jpg);
+		 	background-size: cover;
+		 	background-attachment: fixed;
+		 	background-repeat: no-repeat;
+			color: white;
+			font-family: 'karate', Times, serif;
+	 	}
+		h1 {text-align: center; text-shadow: rgb(126, 207, 225) 1px 0 10px;}
+		iframe{display: flex;	margin: auto  ;	margin-top: auto;}
+		.imgflotte:hover {box-shadow:8px 8px 10px 0 rgba(255, 255, 255, 0.5);}
+		.aGauche{position:absolute; bottom: 0%;right: 0%;}
+
+		@font-face{font-family: 'karate'; src : url('Karate.ttf');}
+
+	</style>
+
+	<title>Perso</title>
+
+</head>
+<body>
+	<div id="a1">
+		<h1 class="un1">Ceci est une page personnelle</h1>
+		<figure>
+			<figcaption></figcaption>
+			<audio controls src="./laGroupieDuPianiste.mp3"></audio>
+		</figure>
+	</div>
+	<hr>
+
+	<div id="b2">
+		<span class="un1">Un petit 20 ?</span>
+		<p><img width="300" height="170" src="https://media.tenor.com/3SBgRqQ9ZRoAAAAC/ast%C3%A9rix-ast%C3%A9rix-et-ob%C3%A9lix.gif" alt="Jamel"></p>
+		<p><iframe width="500" height="270" src="https://www.youtube.com/embed/ZXsQAXx_ao0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		
+		<form action="mailto:raflopes@gmail.com?subject=Tu_a_un_formidable_20/20" method="post" enctype="text/plain">
+			<label for="20">Note /20</label>
+				<select name="20" id="20" required>
+					<option value="" hidden>Choisissez</option>
+					<option value="1">20/20 c'est évident</option>
+					<option value="1">20/20 relou un peu le Rafael</option>
+				</select>
+				<input type="submit" value="Envoyer">
+		</form>
+		
+	</div>
+	<hr>
+	
+	<div id="c3">
+		<p class="aGauche">Retour aux caves à vin<a href="index.html"><img class="imgflotte" title="Cave à vin" src="images/logo.png" alt="logo"></a>
+		</p>
+	</div>
+</body>
+</html>

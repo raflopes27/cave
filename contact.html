@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- declaration de type -->
+<html lang="fr"> 
+<!-- langue francaise -->
+<head>
+	<meta charset="utf-8">
+	<!-- encodage de caractères utf-8 -->
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>SFCV : Contact</title>
+	<!-- Titre de la page dans l'onglet -->
+</head>
+<body>
+	<div id="entete"><!-- TODO1 -->
+		<a title="Page Perso" href="perso.html"><img class="imgflotte" src="images/logo.png" alt="logo"></a>
+		<!-- img balise pour incorporer une image, src, pour la source de l'image depuis un dossier local, et alt pour un descriptif OBLIGATOIRE -->
+	<h1 class="flotte" >SFCV</h1>
+	<h3 class="flotte">N°1 des Caves à Vin</h3>
+	</div>
+	<!-- balise div créer quatre parties différentes dans la page-->
+
+	<hr>
+	<div id="menu"><!-- TODO2 -->
+	<!-- id pour ce qui se situe entre les deux balise, CSS pourra y apporter une modification directement -->
+
+		<ul>
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="produits.html">Produits</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		</div>
+
+	<div id="bloc"><!-- TODO3 -->
+		<h2>Demande de catalogue</h2>
+		<p>
+			Demandez-nous vite notre catalogue gratuit ! <br>
+			Il vous sera livré dans les meilleurs délais.
+		</p>
+		
+        <form action="mailto:toutabene@gmail.com?subject=demande_de_catalogue" method="post" enctype="text/plain">
+			<!-- form est la balise du formulaire -->
+        	<!-- action initie une action, ici l'envoie du mail a une adresse mail, enctype designe le type de contenue que le formuliare envoie -->
+			<label for="Civilite">Civilité</label>
+			<!-- la balise label associe du texte à un champ de formulaire -->
+			<p>
+			<select name="Civilite" id="Civilite" required>
+			<!-- balise select créer une liste déroulante de réponse -->
+				<option value="" hidden>Choisissez</option>
+				<!-- hidden cache le mot lors de la sélection-->
+				<option value="Monsieur">Monsieur</option>
+				<!-- option représente chaque choix dans la liste -->
+				<option value="Madame">Madame</option>
+			</select>
+			</p>
+			<p>
+				<label for="Nom">Nom</label>
+				<input type="text" name="Nom" id="Nom" required>
+				<!-- for et id créer un lien entre l'étiquette et l'élement -->
+			</p>
+			<p>
+				<label for="Prenom">Prénom</label>
+				<input type="text" name="Prenom" id="Prenom" required>
+			</p>
+			<p>
+				<label for="mail">Courriel</label>
+				<input type="email" name="mail" id="mail" required>
+			</p>
+			<p>
+				<label for="Adresse">Adresse</label>
+				<textarea class="taille" name="Adresse" id="Adresse" required></textarea>
+			</p>
+			<p>
+				<label for="Ville">Ville</label>
+				<input  type="text" name="Ville" id="Ville" required>
+				<label for="Code_postal">Code postal</label>
+				<input size="6" type="text" name="Code_postal" id="Code_postal" required>
+				<!-- size modifie taille de la cellule de saisie depuis le code HTML-->
+			</p>
+			<p>
+				<input type="checkbox" name="newsletter" id="newsletter" checked required>
+				<label for="newsletter">Je souhaite recevoir la newsletter </label>
+			</p>
+			<input type="submit" value="Envoyer">
+		</form>
+
+		<p>
+			Ce site a fait l'obet d'une déclaration auprès de la Comission Informatique et Libertés (CNIL). Conformément aux dispositions de la loi
+			Informatique et Libertés du 06/01/1978, vous disposez d'un droit de modification, de retification et d'opposition/supression des données vous concernant,
+			ce par simple demande à : info@sfcv.Comission
+		</p>
+		<p>
+			N'hésitez pas à prendre contact avec l'équipe SFCV. Nous répondrons à toutes vos questions sur l'aménagement de votre cave ou le choix de votre 
+			armoir à vin. Tous les conseils de professionnels pour conserver vos meilleurs vins en toute sécurité pour le plaisirs de les déguster en toute convivialité.
+		</p>
+		</div>
+
+	<div id="pied"><!-- TODO4 -->
+	<p>
+		© SFCV - <a href="Mentions.html">Mentions légales</a><br>
+		L'abus d'alcool est dangereux pour la santé, à consommer avec modération
+	</p>
+	</div>
+</body>
+</html>

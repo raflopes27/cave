@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheet.css">
+<!-- Lien vers la feuile CSS -->
+	<title>SFCV : les caves à vin</title>
+</head>
+<body>
+	<div id="entete"><!-- TODO1 -->
+		<a title="Page Perso" href="perso.html"><img class="imgflotte" src="images/logo.png" alt="logo"></a>
+		<!-- img balise pour incorporer une image, src, pour la source de l'image depuis un dossier local, et alt pour un descriptif OBLIGATOIRE -->
+	<h1 class="flotte">SFCV</h1>
+	<h3 class="flotte">N°1 des Caves à Vin</h3>
+	<!-- class float & imgflotte pour créer image flottante dans CSS-->
+	</div>
+	<!-- balise div créer quatre parties différentes dans la page-->
+
+	<hr>
+	<div id="menu"><!-- TODO2 -->
+	<ul>
+		<li><a href="index.html">Accueil</a></li>
+		<li><a href="produits.html">Produits</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+	</div>
+
+	<div id="bloc"><!-- TODO3 -->
+	<a href="#polyvalente">Descendre à la cave polyvalente</a>
+	<h2 id="vieillissement">Caves de vieillissement</h2>
+	<table>
+	<!-- création d'un tableau -->
+		<tr>
+		<!-- indique le début et la fin d'une ligne du tableau  -->
+			<th>AV 175</th>
+			<!-- indique le début et la fin du contenu d'une cellule -->
+			<th colspan="4">Pratique, le thermomètre en façade et le nouveau registre de cave international pour tenir à la craie la gestion des bouteilles présentes. Confortable les clayettes collector reversibles à empreintes en bois massif.</th>
+			<!-- colespan signifie que la cellule prendra 4 colonne -->
+		</tr>
+		<tr>
+			<th rowspan="3"><img src="images/AV175.jpg" alt="AV175"></th>
+			<!-- "rowspan" signifie que la cellule prendra trois ligne -->
+			<td>Contenance</td>
+			<!-- Divise lignes d'un tableau en cellule-->
+			<td>Système froid</td>
+			<td>Dimensions (hxlxp></td>
+			<td>Porte</td>
+		</tr>
+		<tr>
+			<td>178 (en 75cl)</td>
+			<td>Compresseur</td>
+			<td>144 x 62 x 67</td>
+			<td>Pleine</td>
+		</tr>
+		<tr>
+			<td colspan="3">Accessoires : 2 Clayetts réversibles et 1 Modulable (en option payante), Régulation électromécanique, Afficheur Digital de température</td>
+			<td>Noir</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr> 
+			<th>AV 205</th> 
+			<th colspan="4">Astucieux, sa lampe de lecture pour les étiquettes dans un environnement obscur</th>
+
+		</tr>
+		<tr>
+			<th rowspan="3"><img src="images/AV205.jpg" alt="AV205"></th>
+			<td>Contenance</td>
+			<td>Système froid</td>
+			<td>Dimensions (hxlxp></td>
+			<td>Porte</td>
+		</tr>
+		<tr>
+			<td>196 (en 75cl)</td>
+			<td>Compresseur</td>
+			<td>139 x 70 x68</td>
+			<td>Pleine</td>
+		</tr>
+		<tr>
+			<td colspan="3">Accessoires : Serrure à clé, 1 Clayette coulissante (possibilité de supplémentaires e option payante), Régulation électronique, Dynamique DataDisplay</td>
+			<td>Noir</td>
+		</tr>
+	</table>
+	<p class="pag"><a href="#vieillissement">Remonter au cave de vieillissement</a></p>
+
+	<h2 class="pag" id="polyvalente">Cave polyvalente</h2>
+	<table>
+		<tr> 
+			<th>CV 183</th> 
+			<th colspan="4">Elégante, la poignée de porte en bois profilé.</th>
+
+		</tr>
+		<tr>
+			<th rowspan="3"><img src="images/CV183.jpg" alt="AV205"></th>
+			<td>Contenance</td>
+			<td>Système froid</td>
+			<td>Dimensions (hxlxp></td>
+			<td>Porte</td>
+		</tr>
+		<tr>
+			<td>170 (en 75cl)</td>
+			<td>Compresseur</td>
+			<td>125 x 70 x67</td>
+			<td>Plein</td>
+		</tr>
+		<tr>
+			<th colspan="3">Accessoires : Serrure à clé, 1 Clayette bois option</th>
+			<td>Brun foncé</td>
+		</tr>
+	</table>
+	<p class="pag">Bientôt de nouvelles caves disponibles...</p>
+	</div>
+	
+	<div id="pied"><!-- TODO4 -->
+	<p class="pag">
+		© SFCV - <a href="mentions.html">Mentions légales</a><br>
+		L'abus d'alcool est dangereux pour la santé, à consommer avec modération
+	</p>
+	</div>
+</body>
+</html>
